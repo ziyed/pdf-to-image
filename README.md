@@ -1,4 +1,4 @@
-# Laravel library to convert a PDF to an Image
+# A Laravel library to convert a PDF to an Image
 
 This Library helps to convert any PDF file to an Image 
 

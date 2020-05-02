@@ -38,7 +38,7 @@ See [issues regarding ImageMagick](#issues-regarding-imagemagick).
 Converting a pdf to an image is easy.
 
 ```php
-$pdf = new App\Libraries\PdfToImage($pathToPdf);
+$pdf = new \App\Libraries\PdfToImage($pathToPdf);
 $pdf->saveImage($pathToWhereImageShouldBeStored);
 ```
 
@@ -49,7 +49,7 @@ $path = storage_path() . "/app/public/documents/pdf_name.pdf";
 
 $savePath = storage_path() . "/app/public/documents/pages/";
 
-$pdf = new App\Libraries\PdfToImage($path);
+$pdf = new \App\Libraries\PdfToImage($path);
 
 foreach (range(1, $pdf->getNumberOfPages()) as $pageNumber) {
     $pageName = 'page_no'.'_'.$pageNumber;
